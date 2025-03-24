@@ -1,0 +1,16 @@
+Target Data Extension
+Workday_Feed_Daily_Data_Warn
+
+Rules
+If count is equal to
+1
+
+Then trigger actions
+Send Email Notification
+Log Verification Outcome
+
+Recipient Email Addresses
+bt-mc@salesforce.com emetechteam@salesforce.com
+
+Note (Sent in Email)
+Warning - Automation for WD4S Workday Integration in Workday Integration (517011263) data tests have met a warning threshold. Check the Workday_Feed_Daily_Data_Tests_Log data extension for detailed test results.
