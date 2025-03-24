@@ -1,0 +1,17 @@
+Target Data Extension
+Daily_WD_Data_Normalized
+
+Rules
+If count is less than
+69,000
+
+Then trigger actions
+Stop Automation
+Send Email Notification
+Log Verification Outcome
+
+Recipient Email Addresses
+bt-mc@salesforce.com
+
+Note (Sent in Email)
+Employee_Engagement_WorkdayFeed failed because record count is less than 69000. MID: 517001519
