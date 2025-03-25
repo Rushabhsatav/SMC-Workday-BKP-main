@@ -1,0 +1,16 @@
+Properties
+Name	Decrypt Workday Data
+External Key	ee807194-236a-409b-86f8-6b5dd1c369a2
+Description	
+
+File Action	Manage File
+
+Configuration
+File Naming Pattern	
+%%BASEFILENAME_FROM_TRIGGER%%.pgp
+
+Source File Location	ET SFTP Import
+File Management Actions	
+Decrypt file
+
+Customer Private Key	BT Workday Key
