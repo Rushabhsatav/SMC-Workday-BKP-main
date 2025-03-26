@@ -1,0 +1,154 @@
+{
+    "appVersion": "254.0.31",
+    "id": "wnxwh2718x",
+    "name": "TMP_Onboarding_New_Hire_History",
+    "version": 1,
+    "modelVersion": "7",
+    "references": {
+        "dataExtensions/76e508a4-a1bd-eb11-b827-48df37856fb5": [
+            {
+                "identifier": "categories/288296",
+                "relationship": "required"
+            }
+        ],
+        "categories/288296": [
+            {
+                "identifier": "categories/285488",
+                "relationship": "required"
+            }
+        ],
+        "categories/285488": []
+    },
+    "input": [],
+    "config": {
+        "preserveCategories": true,
+        "storeImagesAsReferences": false
+    },
+    "entities": {
+        "assets": {},
+        "attributeGroups": {},
+        "attributeRelationships": {},
+        "attributeSets": {},
+        "automations": {},
+        "categories": {
+            "285488": {
+                "issues": [],
+                "originID": "285488",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": 0,
+                    "name": "Data Extensions",
+                    "editable": 0,
+                    "extendable": 1
+                }
+            },
+            "288296": {
+                "issues": [],
+                "originID": "288296",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/285488/data/id}}",
+                    "name": "New Hire Welcome",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            }
+        },
+        "cloudPageCollections": {},
+        "codeResources": {},
+        "dataExtensions": {
+            "76e508a4-a1bd-eb11-b827-48df37856fb5": {
+                "issues": [],
+                "originID": "76e508a4-a1bd-eb11-b827-48df37856fb5",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "categoryId": "{{mcpm#/entities/categories/288296/data/id}}",
+                    "dataRetentionProperties": {
+                        "isDeleteAtEndOfRetentionPeriod": false,
+                        "isResetRetentionPeriodOnImport": false,
+                        "isRowBasedRetention": false,
+                        "rowBasedThreshold": 1000000000
+                    },
+                    "description": "",
+                    "isFieldAdditionAllowed": true,
+                    "isFieldModificationAllowed": true,
+                    "isObjectDeletable": true,
+                    "isSendable": false,
+                    "isTestable": false,
+                    "name": "TMP_Onboarding_New_Hire_History",
+                    "customerKey": "C588713E-7A20-4D62-AD0B-4A7789D9B71E",
+                    "fields": [
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": false,
+                            "isPrimaryKey": true,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Employee_ID",
+                            "ordinal": 0,
+                            "type": "Number"
+                        },
+                        {
+                            "defaultValue": "GetDate()",
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Created_Date",
+                            "ordinal": 1,
+                            "type": "Date"
+                        }
+                    ]
+                }
+            }
+        },
+        "dataExtractActivities": {},
+        "dataFilterDefinitions": {},
+        "dataFilters": {},
+        "eventDefinitions": {},
+        "fileTransferActivities": {},
+        "importActivities": {},
+        "journeys": {},
+        "journeyTemplates": {},
+        "landingPages": {},
+        "microsites": {},
+        "micrositePages": {},
+        "micrositePageVersions": {},
+        "primaryLandingPages": {},
+        "queryActivities": {},
+        "registeredCustomActivities": {},
+        "scriptActivities": {},
+        "sendDefinitions": {},
+        "sharedDataExtensions": {},
+        "siteMapVersions": {},
+        "subscriberLists": {},
+        "verificationActivities": {}
+    },
+    "selectedEntities": {
+        "assets": [],
+        "attributeGroups": [],
+        "automations": [],
+        "cloudPageCollections": [],
+        "dataExtensions": [
+            "76e508a4-a1bd-eb11-b827-48df37856fb5"
+        ],
+        "journeys": [],
+        "journeyTemplates": [],
+        "sharedDataExtensions": []
+    }
+}

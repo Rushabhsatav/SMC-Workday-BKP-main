@@ -1,0 +1,468 @@
+{
+    "appVersion": "254.0.31",
+    "id": "3e6ckh36m0",
+    "name": "Daily_WD_Data_Market_Strategy",
+    "version": 1,
+    "modelVersion": "7",
+    "references": {
+        "sharedDataExtensions/48363890-ebae-ed11-a5bd-5cba2c704ea8": [
+            {
+                "identifier": "categories/291880",
+                "relationship": "required"
+            }
+        ],
+        "categories/291880": [
+            {
+                "identifier": "categories/282129",
+                "relationship": "required"
+            }
+        ],
+        "categories/282129": [
+            {
+                "identifier": "categories/282122",
+                "relationship": "required"
+            }
+        ],
+        "categories/282122": []
+    },
+    "input": [],
+    "config": {
+        "preserveCategories": true,
+        "storeImagesAsReferences": true
+    },
+    "entities": {
+        "assets": {},
+        "attributeGroups": {},
+        "attributeRelationships": {},
+        "attributeSets": {},
+        "automations": {},
+        "categories": {
+            "282122": {
+                "issues": [],
+                "originID": "282122",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "description": "",
+                    "categoryType": "shared_data",
+                    "parentId": 0,
+                    "name": "Shared Items",
+                    "editable": 0,
+                    "extendable": 0
+                }
+            },
+            "282129": {
+                "issues": [],
+                "originID": "282129",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "description": "",
+                    "categoryType": "shared_dataextension",
+                    "parentId": "{{mcpm#/entities/categories/282122/data/id}}",
+                    "name": "Shared Data Extensions",
+                    "editable": 0,
+                    "extendable": 1
+                }
+            },
+            "291880": {
+                "issues": [],
+                "originID": "291880",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "description": "",
+                    "categoryType": "shared_dataextension",
+                    "parentId": "{{mcpm#/entities/categories/282129/data/id}}",
+                    "name": "Market Strategy",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            }
+        },
+        "cloudPageCollections": {},
+        "codeResources": {},
+        "dataExtensions": {},
+        "dataExtractActivities": {},
+        "dataFilterDefinitions": {},
+        "dataFilters": {},
+        "eventDefinitions": {},
+        "fileTransferActivities": {},
+        "importActivities": {},
+        "journeys": {},
+        "journeyTemplates": {},
+        "landingPages": {},
+        "microsites": {},
+        "micrositePages": {},
+        "micrositePageVersions": {},
+        "primaryLandingPages": {},
+        "queryActivities": {},
+        "registeredCustomActivities": {},
+        "scriptActivities": {},
+        "sendDefinitions": {},
+        "sharedDataExtensions": {
+            "48363890-ebae-ed11-a5bd-5cba2c704ea8": {
+                "issues": [
+                    {
+                        "type": "UNSUPPORTED_FUNCTIONALITY",
+                        "level": "WARNING",
+                        "sourceJobType": "PACKAGE",
+                        "functionality": "SHARED_DE"
+                    }
+                ],
+                "originID": "48363890-ebae-ed11-a5bd-5cba2c704ea8",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "categoryId": "{{mcpm#/entities/categories/291880/data/id}}",
+                    "dataRetentionProperties": {
+                        "isDeleteAtEndOfRetentionPeriod": false,
+                        "isResetRetentionPeriodOnImport": false,
+                        "isRowBasedRetention": false,
+                        "rowBasedThreshold": 1000000000
+                    },
+                    "description": "",
+                    "isFieldAdditionAllowed": true,
+                    "isFieldModificationAllowed": true,
+                    "isObjectDeletable": true,
+                    "isSendable": false,
+                    "isTestable": false,
+                    "name": "Daily_WD_Data_Market_Strategy",
+                    "customerKey": "878A175C-8145-4FC6-B49B-C56BB6A2FC22",
+                    "fields": [
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": false,
+                            "isPrimaryKey": true,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 50,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Employee_ID",
+                            "ordinal": 0,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 500,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Preferred_Name",
+                            "ordinal": 1,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "First_Name",
+                            "ordinal": 2,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Last_Name",
+                            "ordinal": 3,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Direct_Reports",
+                            "ordinal": 4,
+                            "type": "Number"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Job_Title",
+                            "ordinal": 5,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Division",
+                            "ordinal": 6,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Business_Unit",
+                            "ordinal": 7,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 254,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Email",
+                            "ordinal": 8,
+                            "type": "EmailAddress"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 254,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Manager_Email",
+                            "ordinal": 9,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_01",
+                            "ordinal": 10,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_02",
+                            "ordinal": 11,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_03",
+                            "ordinal": 12,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_04",
+                            "ordinal": 13,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_05",
+                            "ordinal": 14,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_06",
+                            "ordinal": 15,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_07",
+                            "ordinal": 16,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_08",
+                            "ordinal": 17,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_09",
+                            "ordinal": 18,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Management_Chain_Level_10",
+                            "ordinal": 19,
+                            "type": "Text"
+                        }
+                    ]
+                }
+            }
+        },
+        "siteMapVersions": {},
+        "subscriberLists": {},
+        "verificationActivities": {}
+    },
+    "selectedEntities": {
+        "assets": [],
+        "attributeGroups": [],
+        "automations": [],
+        "cloudPageCollections": [],
+        "dataExtensions": [],
+        "journeys": [],
+        "journeyTemplates": [],
+        "sharedDataExtensions": [
+            "48363890-ebae-ed11-a5bd-5cba2c704ea8"
+        ]
+    }
+}

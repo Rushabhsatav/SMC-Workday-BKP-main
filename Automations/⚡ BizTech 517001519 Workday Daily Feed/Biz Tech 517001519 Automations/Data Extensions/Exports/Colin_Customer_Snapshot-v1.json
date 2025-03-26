@@ -1,0 +1,167 @@
+{
+    "appVersion": "254.0.31",
+    "id": "glc89pk67y",
+    "name": "Colin_Customer_Snapshot-v1",
+    "version": 1,
+    "modelVersion": "7",
+    "references": {
+        "sharedDataExtensions/05ef33bc-fedb-ee11-a5ce-5cba2c706b68": [
+            {
+                "identifier": "categories/307425",
+                "relationship": "required"
+            }
+        ],
+        "categories/307425": [
+            {
+                "identifier": "categories/282129",
+                "relationship": "required"
+            }
+        ],
+        "categories/282129": [
+            {
+                "identifier": "categories/282122",
+                "relationship": "required"
+            }
+        ],
+        "categories/282122": []
+    },
+    "input": [],
+    "config": {
+        "preserveCategories": true,
+        "storeImagesAsReferences": true
+    },
+    "entities": {
+        "assets": {},
+        "attributeGroups": {},
+        "attributeRelationships": {},
+        "attributeSets": {},
+        "automations": {},
+        "categories": {
+            "282122": {
+                "issues": [],
+                "originID": "282122",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "description": "",
+                    "categoryType": "shared_data",
+                    "parentId": 0,
+                    "name": "Shared Items",
+                    "editable": 0,
+                    "extendable": 0
+                }
+            },
+            "282129": {
+                "issues": [],
+                "originID": "282129",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "description": "",
+                    "categoryType": "shared_dataextension",
+                    "parentId": "{{mcpm#/entities/categories/282122/data/id}}",
+                    "name": "Shared Data Extensions",
+                    "editable": 0,
+                    "extendable": 1
+                }
+            },
+            "307425": {
+                "issues": [],
+                "originID": "307425",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "description": "",
+                    "categoryType": "shared_dataextension",
+                    "parentId": "{{mcpm#/entities/categories/282129/data/id}}",
+                    "name": "CMO Office",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            }
+        },
+        "cloudPageCollections": {},
+        "codeResources": {},
+        "dataExtensions": {},
+        "dataExtractActivities": {},
+        "dataFilterDefinitions": {},
+        "dataFilters": {},
+        "eventDefinitions": {},
+        "fileTransferActivities": {},
+        "importActivities": {},
+        "journeys": {},
+        "journeyTemplates": {},
+        "landingPages": {},
+        "microsites": {},
+        "micrositePages": {},
+        "micrositePageVersions": {},
+        "primaryLandingPages": {},
+        "queryActivities": {},
+        "registeredCustomActivities": {},
+        "scriptActivities": {},
+        "sendDefinitions": {},
+        "sharedDataExtensions": {
+            "05ef33bc-fedb-ee11-a5ce-5cba2c706b68": {
+                "issues": [
+                    {
+                        "type": "UNSUPPORTED_FUNCTIONALITY",
+                        "level": "WARNING",
+                        "sourceJobType": "PACKAGE",
+                        "functionality": "SHARED_DE"
+                    }
+                ],
+                "originID": "05ef33bc-fedb-ee11-a5ce-5cba2c706b68",
+                "originEID": "mc9lv6jfhl6-l477pfp635s8kv18",
+                "data": {
+                    "categoryId": "{{mcpm#/entities/categories/307425/data/id}}",
+                    "dataRetentionProperties": {
+                        "isDeleteAtEndOfRetentionPeriod": false,
+                        "isResetRetentionPeriodOnImport": false,
+                        "isRowBasedRetention": false,
+                        "rowBasedThreshold": 1000000000
+                    },
+                    "description": "Daily WD updated",
+                    "isFieldAdditionAllowed": true,
+                    "isFieldModificationAllowed": true,
+                    "isObjectDeletable": true,
+                    "isSendable": true,
+                    "isTestable": true,
+                    "name": "Colin_Customer_Snapshot",
+                    "sendableCustomObjectField": "Email",
+                    "sendableSubscriberField": "_SubscriberKey",
+                    "customerKey": "1F63D3CC-2BC2-4DF1-81F4-6AF002BEDBAE",
+                    "fields": [
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 254,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Email",
+                            "ordinal": 0,
+                            "type": "EmailAddress"
+                        }
+                    ]
+                }
+            }
+        },
+        "siteMapVersions": {},
+        "subscriberLists": {},
+        "verificationActivities": {}
+    },
+    "selectedEntities": {
+        "assets": [],
+        "attributeGroups": [],
+        "automations": [],
+        "cloudPageCollections": [],
+        "dataExtensions": [],
+        "journeys": [],
+        "journeyTemplates": [],
+        "sharedDataExtensions": [
+            "05ef33bc-fedb-ee11-a5ce-5cba2c706b68"
+        ]
+    }
+}

@@ -1,0 +1,176 @@
+{
+    "appVersion": "254.0.31",
+    "id": "xxjs25ruxa",
+    "name": "Workday_Feed_Daily_Data_Warn",
+    "version": 1,
+    "modelVersion": "7",
+    "references": {
+        "dataExtensions/bf631171-52d9-ed11-a5c8-5cba2c700908": [
+            {
+                "identifier": "categories/353869",
+                "relationship": "required"
+            }
+        ],
+        "categories/353869": [
+            {
+                "identifier": "categories/353868",
+                "relationship": "required"
+            }
+        ],
+        "categories/353868": [
+            {
+                "identifier": "categories/354020",
+                "relationship": "required"
+            }
+        ],
+        "categories/354020": [
+            {
+                "identifier": "categories/353304",
+                "relationship": "required"
+            }
+        ],
+        "categories/353304": []
+    },
+    "input": [],
+    "config": {
+        "preserveCategories": true,
+        "storeImagesAsReferences": false
+    },
+    "entities": {
+        "assets": {},
+        "attributeGroups": {},
+        "attributeRelationships": {},
+        "attributeSets": {},
+        "automations": {},
+        "categories": {
+            "353304": {
+                "issues": [],
+                "originID": "353304",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": 0,
+                    "name": "Data Extensions",
+                    "editable": 0,
+                    "extendable": 1
+                }
+            },
+            "353868": {
+                "issues": [],
+                "originID": "353868",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/354020/data/id}}",
+                    "name": "Workday Feed - INT0080",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            },
+            "353869": {
+                "issues": [],
+                "originID": "353869",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/353868/data/id}}",
+                    "name": "Ingest",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            },
+            "354020": {
+                "issues": [],
+                "originID": "354020",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/353304/data/id}}",
+                    "name": "DATA FEEDS",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            }
+        },
+        "cloudPageCollections": {},
+        "codeResources": {},
+        "dataExtensions": {
+            "bf631171-52d9-ed11-a5c8-5cba2c700908": {
+                "issues": [],
+                "originID": "bf631171-52d9-ed11-a5c8-5cba2c700908",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "categoryId": "{{mcpm#/entities/categories/353869/data/id}}",
+                    "dataRetentionProperties": {
+                        "isDeleteAtEndOfRetentionPeriod": false,
+                        "isResetRetentionPeriodOnImport": false,
+                        "isRowBasedRetention": false,
+                        "rowBasedThreshold": 1000000000
+                    },
+                    "description": "",
+                    "isFieldAdditionAllowed": true,
+                    "isFieldModificationAllowed": true,
+                    "isObjectDeletable": true,
+                    "isSendable": false,
+                    "isTestable": false,
+                    "name": "Workday_Feed_Daily_Data_Warn",
+                    "customerKey": "EF3CDEAB-166D-41F7-9ABE-25B0D96F61CA",
+                    "fields": [
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": false,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Warn_Automation",
+                            "ordinal": 0,
+                            "type": "Boolean"
+                        }
+                    ]
+                }
+            }
+        },
+        "dataExtractActivities": {},
+        "dataFilterDefinitions": {},
+        "dataFilters": {},
+        "eventDefinitions": {},
+        "fileTransferActivities": {},
+        "importActivities": {},
+        "journeys": {},
+        "journeyTemplates": {},
+        "landingPages": {},
+        "microsites": {},
+        "micrositePages": {},
+        "micrositePageVersions": {},
+        "primaryLandingPages": {},
+        "queryActivities": {},
+        "registeredCustomActivities": {},
+        "scriptActivities": {},
+        "sendDefinitions": {},
+        "sharedDataExtensions": {},
+        "siteMapVersions": {},
+        "subscriberLists": {},
+        "verificationActivities": {}
+    },
+    "selectedEntities": {
+        "assets": [],
+        "attributeGroups": [],
+        "automations": [],
+        "cloudPageCollections": [],
+        "dataExtensions": [
+            "bf631171-52d9-ed11-a5c8-5cba2c700908"
+        ],
+        "journeys": [],
+        "journeyTemplates": [],
+        "sharedDataExtensions": []
+    }
+}

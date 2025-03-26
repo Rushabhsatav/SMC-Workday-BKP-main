@@ -1,0 +1,238 @@
+{
+    "appVersion": "254.0.31",
+    "id": "gylzlx81po",
+    "name": "Workday_Feed_Daily__Raw_Import_API__Log",
+    "version": 1,
+    "modelVersion": "7",
+    "references": {
+        "dataExtensions/84e2a912-2ddd-ec11-a321-1402ec9390bd": [
+            {
+                "identifier": "categories/353869",
+                "relationship": "required"
+            }
+        ],
+        "categories/353869": [
+            {
+                "identifier": "categories/353868",
+                "relationship": "required"
+            }
+        ],
+        "categories/353868": [
+            {
+                "identifier": "categories/354020",
+                "relationship": "required"
+            }
+        ],
+        "categories/354020": [
+            {
+                "identifier": "categories/353304",
+                "relationship": "required"
+            }
+        ],
+        "categories/353304": []
+    },
+    "input": [],
+    "config": {
+        "preserveCategories": true,
+        "storeImagesAsReferences": false
+    },
+    "entities": {
+        "assets": {},
+        "attributeGroups": {},
+        "attributeRelationships": {},
+        "attributeSets": {},
+        "automations": {},
+        "categories": {
+            "353304": {
+                "issues": [],
+                "originID": "353304",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": 0,
+                    "name": "Data Extensions",
+                    "editable": 0,
+                    "extendable": 1
+                }
+            },
+            "353868": {
+                "issues": [],
+                "originID": "353868",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/354020/data/id}}",
+                    "name": "Workday Feed - INT0080",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            },
+            "353869": {
+                "issues": [],
+                "originID": "353869",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/353868/data/id}}",
+                    "name": "Ingest",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            },
+            "354020": {
+                "issues": [],
+                "originID": "354020",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/353304/data/id}}",
+                    "name": "DATA FEEDS",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            }
+        },
+        "cloudPageCollections": {},
+        "codeResources": {},
+        "dataExtensions": {
+            "84e2a912-2ddd-ec11-a321-1402ec9390bd": {
+                "issues": [],
+                "originID": "84e2a912-2ddd-ec11-a321-1402ec9390bd",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "categoryId": "{{mcpm#/entities/categories/353869/data/id}}",
+                    "dataRetentionProperties": {
+                        "isDeleteAtEndOfRetentionPeriod": false,
+                        "isResetRetentionPeriodOnImport": false,
+                        "isRowBasedRetention": false,
+                        "rowBasedThreshold": 1000000000
+                    },
+                    "description": "",
+                    "isFieldAdditionAllowed": true,
+                    "isFieldModificationAllowed": true,
+                    "isObjectDeletable": false,
+                    "isSendable": false,
+                    "isTestable": false,
+                    "name": "Workday_Feed_Daily__Raw_Import_API__Log",
+                    "customerKey": "Workday_Feed_Daily__Raw_Import_API__Log",
+                    "fields": [
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": false,
+                            "isPrimaryKey": true,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 50,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "BatchID",
+                            "ordinal": 0,
+                            "type": "Text"
+                        },
+                        {
+                            "defaultValue": "GetDate()",
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "ts",
+                            "ordinal": 1,
+                            "type": "Date"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "ts_api_start",
+                            "ordinal": 2,
+                            "type": "Date"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "ts_api_end",
+                            "ordinal": 3,
+                            "type": "Date"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "ExpectedRowCount",
+                            "ordinal": 4,
+                            "type": "Number"
+                        }
+                    ]
+                }
+            }
+        },
+        "dataExtractActivities": {},
+        "dataFilterDefinitions": {},
+        "dataFilters": {},
+        "eventDefinitions": {},
+        "fileTransferActivities": {},
+        "importActivities": {},
+        "journeys": {},
+        "journeyTemplates": {},
+        "landingPages": {},
+        "microsites": {},
+        "micrositePages": {},
+        "micrositePageVersions": {},
+        "primaryLandingPages": {},
+        "queryActivities": {},
+        "registeredCustomActivities": {},
+        "scriptActivities": {},
+        "sendDefinitions": {},
+        "sharedDataExtensions": {},
+        "siteMapVersions": {},
+        "subscriberLists": {},
+        "verificationActivities": {}
+    },
+    "selectedEntities": {
+        "assets": [],
+        "attributeGroups": [],
+        "automations": [],
+        "cloudPageCollections": [],
+        "dataExtensions": [
+            "84e2a912-2ddd-ec11-a321-1402ec9390bd"
+        ],
+        "journeys": [],
+        "journeyTemplates": [],
+        "sharedDataExtensions": []
+    }
+}

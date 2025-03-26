@@ -1,0 +1,306 @@
+{
+    "appVersion": "254.0.31",
+    "id": "klz9a3l5cj",
+    "name": "Workday_Feed_Daily_Data_Tests_Log",
+    "version": 3,
+    "modelVersion": "7",
+    "references": {
+        "dataExtensions/5af1daf3-660c-ed11-a33a-1402ec9389e0": [
+            {
+                "identifier": "categories/353869",
+                "relationship": "required"
+            }
+        ],
+        "categories/353869": [
+            {
+                "identifier": "categories/353868",
+                "relationship": "required"
+            }
+        ],
+        "categories/353868": [
+            {
+                "identifier": "categories/354020",
+                "relationship": "required"
+            }
+        ],
+        "categories/354020": [
+            {
+                "identifier": "categories/353304",
+                "relationship": "required"
+            }
+        ],
+        "categories/353304": []
+    },
+    "input": [],
+    "config": {
+        "preserveCategories": true,
+        "storeImagesAsReferences": false
+    },
+    "entities": {
+        "assets": {},
+        "attributeGroups": {},
+        "attributeRelationships": {},
+        "attributeSets": {},
+        "automations": {},
+        "categories": {
+            "353304": {
+                "issues": [],
+                "originID": "353304",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": 0,
+                    "name": "Data Extensions",
+                    "editable": 0,
+                    "extendable": 1
+                }
+            },
+            "353868": {
+                "issues": [],
+                "originID": "353868",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/354020/data/id}}",
+                    "name": "Workday Feed - INT0080",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            },
+            "353869": {
+                "issues": [],
+                "originID": "353869",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/353868/data/id}}",
+                    "name": "Ingest",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            },
+            "354020": {
+                "issues": [],
+                "originID": "354020",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/353304/data/id}}",
+                    "name": "DATA FEEDS",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            }
+        },
+        "cloudPageCollections": {},
+        "codeResources": {},
+        "dataExtensions": {
+            "5af1daf3-660c-ed11-a33a-1402ec9389e0": {
+                "issues": [],
+                "originID": "5af1daf3-660c-ed11-a33a-1402ec9389e0",
+                "originEID": "mcr17n1zhy4rq421ykqpt4s9xwn4",
+                "data": {
+                    "categoryId": "{{mcpm#/entities/categories/353869/data/id}}",
+                    "dataRetentionProperties": {
+                        "isDeleteAtEndOfRetentionPeriod": false,
+                        "isResetRetentionPeriodOnImport": false,
+                        "isRowBasedRetention": false,
+                        "rowBasedThreshold": 1000000000
+                    },
+                    "description": "",
+                    "isFieldAdditionAllowed": true,
+                    "isFieldModificationAllowed": true,
+                    "isObjectDeletable": false,
+                    "isSendable": false,
+                    "isTestable": false,
+                    "name": "Workday_Feed_Daily_Data_Tests_Log",
+                    "customerKey": "3CD00217-07EE-45AE-BF97-698398FBA639",
+                    "fields": [
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": false,
+                            "isPrimaryKey": true,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 50,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "BatchID",
+                            "ordinal": 0,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": false,
+                            "isPrimaryKey": true,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 500,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Test_Name",
+                            "ordinal": 1,
+                            "type": "Text"
+                        },
+                        {
+                            "defaultValue": "GetDate()",
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": true,
+                            "isOverridable": true,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Test_Date",
+                            "ordinal": 9,
+                            "type": "Date"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": true,
+                            "isOverridable": true,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 50,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Test_Result",
+                            "ordinal": 10,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": true,
+                            "isOverridable": true,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 255,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Test_Result_Desc",
+                            "ordinal": 11,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": true,
+                            "isOverridable": true,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 18,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Test_Result_Numeric",
+                            "ordinal": 12,
+                            "scale": 2,
+                            "type": "Decimal"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": true,
+                            "isOverridable": true,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 50,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Test_Result_Yesterday",
+                            "ordinal": 13,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": true,
+                            "isOverridable": true,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 50,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Pass_Warn_Stop",
+                            "ordinal": 14,
+                            "type": "Text"
+                        },
+                        {
+                            "defaultValue": "GetDate()",
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": true,
+                            "isOverridable": true,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Date",
+                            "ordinal": 15,
+                            "type": "Date"
+                        }
+                    ]
+                }
+            }
+        },
+        "dataExtractActivities": {},
+        "dataFilterDefinitions": {},
+        "dataFilters": {},
+        "eventDefinitions": {},
+        "fileTransferActivities": {},
+        "importActivities": {},
+        "journeys": {},
+        "journeyTemplates": {},
+        "landingPages": {},
+        "microsites": {},
+        "micrositePages": {},
+        "micrositePageVersions": {},
+        "primaryLandingPages": {},
+        "queryActivities": {},
+        "registeredCustomActivities": {},
+        "scriptActivities": {},
+        "sendDefinitions": {},
+        "sharedDataExtensions": {},
+        "siteMapVersions": {},
+        "subscriberLists": {},
+        "verificationActivities": {}
+    },
+    "selectedEntities": {
+        "assets": [],
+        "attributeGroups": [],
+        "automations": [],
+        "cloudPageCollections": [],
+        "dataExtensions": [
+            "5af1daf3-660c-ed11-a33a-1402ec9389e0"
+        ],
+        "journeys": [],
+        "journeyTemplates": [],
+        "sharedDataExtensions": []
+    }
+}

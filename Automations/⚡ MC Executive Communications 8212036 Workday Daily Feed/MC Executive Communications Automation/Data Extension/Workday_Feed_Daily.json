@@ -1,0 +1,218 @@
+{
+    "appVersion": "254.0.31",
+    "id": "6r3ask0v3g",
+    "name": "Workday_Feed_Daily",
+    "version": 1,
+    "modelVersion": "7",
+    "references": {
+        "dataExtensions/c9109772-2f8e-ee11-a5d4-5cba2c6faf78": [
+            {
+                "identifier": "categories/30465",
+                "relationship": "required"
+            }
+        ],
+        "categories/30465": [
+            {
+                "identifier": "categories/29886",
+                "relationship": "required"
+            }
+        ],
+        "categories/29886": []
+    },
+    "input": [],
+    "config": {
+        "preserveCategories": true,
+        "storeImagesAsReferences": false
+    },
+    "entities": {
+        "assets": {},
+        "attributeGroups": {},
+        "attributeRelationships": {},
+        "attributeSets": {},
+        "automations": {},
+        "categories": {
+            "29886": {
+                "issues": [],
+                "originID": "29886",
+                "originEID": "mczypdrx1k0zhdzkmbjqb3cssfhq",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": 0,
+                    "name": "Data Extensions",
+                    "editable": 0,
+                    "extendable": 1
+                }
+            },
+            "30465": {
+                "issues": [],
+                "originID": "30465",
+                "originEID": "mczypdrx1k0zhdzkmbjqb3cssfhq",
+                "data": {
+                    "description": "",
+                    "categoryType": "dataextension",
+                    "parentId": "{{mcpm#/entities/categories/29886/data/id}}",
+                    "name": "Workday Data",
+                    "editable": 1,
+                    "extendable": 1
+                }
+            }
+        },
+        "cloudPageCollections": {},
+        "codeResources": {},
+        "dataExtensions": {
+            "c9109772-2f8e-ee11-a5d4-5cba2c6faf78": {
+                "issues": [],
+                "originID": "c9109772-2f8e-ee11-a5d4-5cba2c6faf78",
+                "originEID": "mczypdrx1k0zhdzkmbjqb3cssfhq",
+                "data": {
+                    "categoryId": "{{mcpm#/entities/categories/30465/data/id}}",
+                    "dataRetentionProperties": {
+                        "isDeleteAtEndOfRetentionPeriod": false,
+                        "isResetRetentionPeriodOnImport": false,
+                        "isRowBasedRetention": false,
+                        "rowBasedThreshold": 1000000000
+                    },
+                    "description": "",
+                    "isFieldAdditionAllowed": true,
+                    "isFieldModificationAllowed": true,
+                    "isObjectDeletable": true,
+                    "isSendable": false,
+                    "isTestable": false,
+                    "name": "Workday_Feed_Daily",
+                    "customerKey": "04FF2A76-C2E9-411C-9DDC-839930E8C004",
+                    "fields": [
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Preferred_Name",
+                            "ordinal": 0,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "First_Name",
+                            "ordinal": 1,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Last_Name",
+                            "ordinal": 2,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": false,
+                            "isOverridable": false,
+                            "isNullable": false,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 254,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Email_Address",
+                            "ordinal": 3,
+                            "type": "EmailAddress"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": true,
+                            "isOverridable": true,
+                            "isNullable": false,
+                            "isPrimaryKey": true,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "length": 250,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Employee_ID",
+                            "ordinal": 4,
+                            "type": "Text"
+                        },
+                        {
+                            "description": "",
+                            "isHidden": false,
+                            "isInheritable": true,
+                            "isOverridable": true,
+                            "isNullable": true,
+                            "isPrimaryKey": false,
+                            "isReadOnly": false,
+                            "isTemplateField": false,
+                            "masktype": "None",
+                            "mustOverride": false,
+                            "name": "Original_Hire_Date",
+                            "ordinal": 5,
+                            "type": "Date"
+                        }
+                    ]
+                }
+            }
+        },
+        "dataExtractActivities": {},
+        "dataFilterDefinitions": {},
+        "dataFilters": {},
+        "eventDefinitions": {},
+        "fileTransferActivities": {},
+        "importActivities": {},
+        "journeys": {},
+        "journeyTemplates": {},
+        "landingPages": {},
+        "microsites": {},
+        "micrositePages": {},
+        "micrositePageVersions": {},
+        "primaryLandingPages": {},
+        "queryActivities": {},
+        "registeredCustomActivities": {},
+        "scriptActivities": {},
+        "sendDefinitions": {},
+        "sharedDataExtensions": {},
+        "siteMapVersions": {},
+        "subscriberLists": {},
+        "verificationActivities": {}
+    },
+    "selectedEntities": {
+        "assets": [],
+        "attributeGroups": [],
+        "automations": [],
+        "cloudPageCollections": [],
+        "dataExtensions": [
+            "c9109772-2f8e-ee11-a5d4-5cba2c6faf78"
+        ],
+        "journeys": [],
+        "journeyTemplates": [],
+        "sharedDataExtensions": []
+    }
+}
